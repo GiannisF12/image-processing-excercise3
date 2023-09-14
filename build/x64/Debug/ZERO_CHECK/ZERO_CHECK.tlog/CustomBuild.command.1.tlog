@@ -1,0 +1,10 @@
+^C:\USERS\USER\DESKTOP\UTH\EPEKSERGASIA_EIKONAS\PROJECT\BUILD\CMAKEFILES\893AC3987707B66CFD54A65D22E022D3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/UTH/epeksergasia_eikonas/project -BC:/Users/user/Desktop/UTH/epeksergasia_eikonas/project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/user/Desktop/UTH/epeksergasia_eikonas/project/build/opencvtest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
